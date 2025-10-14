@@ -8,11 +8,11 @@
   </head>
   <body class="h-screen">
     <main>
-      <section>
-        <header class="bg-[#131110] w-full max-h-20">
-          <section class="flex justify-between p-8">
+      <section class="bg-[#131110]">
+        <header class="sticky top-0 bg-[#131110] z-50">
+          <div class="flex justify-between items-center p-8">
             <img src="./logo.png" alt="logo" class="w-[83.5px] h-8" />
-            <div
+            <nav
               class="flex items-center text-[20px] text-[#8c8b8b] gap-8 cursor-pointer"
             >
               <span>Residencies</span>
@@ -20,24 +20,240 @@
               <span>Contact Us</span>
               <span>Get Started</span>
               <button
-                class="bg-[#2949c6] cursor-pointer text-[#fff] text-base p-2 hover:scale-110 rounded-md transform transition-all w-24"
+                class="bg-[#2949c6] cursor-pointer text-white text-base p-2 hover:scale-110 rounded-md transition w-24"
               >
                 Contact
               </button>
-            </div>
-          </section>
+            </nav>
+          </div>
         </header>
-        <section class="bg-[#131110]">
-          <div class="flex flex-col -gap-[10px]">
-            <span class="text-[#fff] text-5xl"> Discover </span>
-            <span class="text-[#fff] text-5xl"> Most Suitable </span>
-            <span class="text-[#fff] text-5xl"> Property </span>
-          </section>
-          <div></div>
+
+        <div class="relative flex justify-between gap-10 p-20 h-full w-full">
+          <div class="relative max-w-xl z-10 flex flex-col gap-16">
+            <div class="pointer-events-none absolute inset-0 -z-10">
+              <div
+                class="absolute -top-40 -left-20 w-80 h-80 z-10 bg-white/50 blur-[80px] rounded-3xl"
+              ></div>
+
+              <div
+                class="absolute -top-3 left-56 size-14 z-10 bg-[#ff922d] rounded-full"
+              ></div>
+            </div>
+
+            <h1 class="text-white text-6xl font-semibold">
+              <span class="block">Discover</span>
+              <span class="block">Most Suitable</span>
+              <span class="block">Property</span>
+            </h1>
+
+            <p class="mt-6 text-[#8c8b8b]">
+              Find a variety of properties that suit you very <br />
+              easily. Forget all difficulties in finding a residence for you.
+            </p>
+
+            <div
+              class="bg-white rounded border-2 border-gray-400 p-2 flex items-center justify-between gap-3 w-[356px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 17C14 17 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 10 17 12 17ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z"
+                  fill="#4066ff"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.01158 15.094C6.15376 15.2833 5.37338 15.7521 4.80071 16.4393L3.73374 17.7197C2.64819 19.0223 3.5745 21 5.27018 21H18.73C20.4257 21 21.352 19.0223 20.2665 17.7197L19.1995 16.4393C18.6268 15.7521 17.8464 15.2833 16.9886 15.094C16.9685 15.1199 16.9483 15.1457 16.9281 15.1713C16.2403 16.0438 15.4619 16.8319 14.6801 17.417C13.9573 17.9579 13.0023 18.5 12.0001 18.5C10.9979 18.5 10.0429 17.9579 9.3201 17.417C8.53826 16.8319 7.75984 16.0438 7.07207 15.1713C7.05189 15.1457 7.03172 15.1199 7.01158 15.094Z"
+                  fill="#4066ff"
+                />
+              </svg>
+              <input
+                class="flex-1 bg-transparent text-black placeholder-gray-500 outline-none"
+                type="text"
+                placeholder="Search by location"
+              />
+              <button
+                class="bg-[#2949c6] text-white px-4 py-2 rounded-md hover:scale-105 transition"
+              >
+                Search
+              </button>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col gap-1 pt-10">
+                <div class="flex gap-8 w-full justify-center">
+                  <span class="text-white text-2xl md:text-4xl">9000</span>
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z"
+                        fill="#ff922d"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <span class="text-[#8c8b8b]">Premium Product</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-1 pt-10">
+                <div class="flex gap-8 w-full justify-center">
+                  <span class="text-white text-2xl md:text-4xl">2000</span>
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z"
+                        fill="#ff922d"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <span class="text-[#8c8b8b]">Happy Customer</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-1 pt-10">
+                <div class="flex gap-8 w-full justify-center">
+                  <span class="text-white text-2xl md:text-4xl">28</span>
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z"
+                        fill="#ff922d"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full">
+                  <span class="text-[#8c8b8b]">Awards Winning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[736px]">
+            <img
+              src="./1.png"
+              alt="building"
+              class="w-[640px] h-[736px] object-cover rounded-t-[320px] border-8 border-stone-700"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col p-12 gap-12 h-full">
+        <section
+          class="flex flex-col items-center justify-center py-16 bg-white"
+        >
+          <div
+            class="flex justify-around items-center flex-wrap gap-12 w-full max-w-6xl"
+          >
+            <img
+              src="./prologis.png"
+              class="h-24 w-auto object-contain"
+              alt="Prologis"
+            />
+            <img
+              src="./realty.png"
+              class="h-24 w-auto object-contain"
+              alt="Digital Realty"
+            />
+            <img
+              src="./tower.png"
+              class="h-24 w-auto object-contain"
+              alt="American Tower"
+            />
+            <img
+              src="./equinix.png"
+              class="h-24 w-auto object-contain"
+              alt="Equinix"
+            />
+          </div>
         </section>
 
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between items-center">
+            <span class="text-[#ff922d] text-2xl font-bold">Best Choices</span>
+            <div class="flex gap-2">
+              <button
+                class="h-[32px] w-[32px] flex items-center justify-center shadow-xl/30 rounded bg-white"
+              >
+                &lt;
+              </button>
+              <button
+                class="h-[32px] w-[32px] flex items-center justify-center shadow-xl/30 rounded bg-white"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+          <span class="text-[#1f3e72] text-4xl font-bold"
+            >Popular Residencies</span
+          >
+        </div>
+        <div class="flex flex-wrap">
+          <div
+            class="flex flex-col w-[300px] rounded-md gap-4 transition-all hover:scale-110 hover:bg-[#e8e5f8] p-6"
+          >
+            <div class="w-[250px]">
+              <img
+                class="w-full rounded-lg"
+                src="./state2.png"
+                alt="home-pic"
+              />
+            </div>
+            <span class="text-xl text-[#8c8b8b]"
+              ><span class="text-[#ff922d]">$ </span>66,353</span
+            >
+            <span class="text-[#1f3e72] text-2xl">Assatti Garden City </span>
+            <p class="text-[#8c8b8b] text-xs">
+              Pahlawan Street XVII NO,215,Cinangka,Sawangan,depok,jawa barat
+            </p>
+          </div>
+        </div>
+
+        <section class="flex p-12 gap-40">
+          <div
+            class="border-8 border-gray-300 rounded-t-full overflow-hidden w-[540px] h-[680px] inline-block"
+          >
+            <img
+              src="/value.png"
+              alt="value-pic"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div>right</div>
+        </section>
       </section>
     </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
