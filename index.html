@@ -15,10 +15,10 @@
             <nav
               class="flex items-center text-[20px] text-[#8c8b8b] gap-8 cursor-pointer"
             >
-              <span>Residencies</span>
-              <span>Our Value</span>
-              <span>Contact Us</span>
-              <span>Get Started</span>
+              <a href="#residence">Residencies</a>
+              <a href="#value">Our Value</a>
+              <a href="#contact">Contact Us</a>
+              <a href="#get">Get Started</a>
               <button
                 class="bg-[#2949c6] cursor-pointer text-white text-base p-2 hover:scale-110 rounded-md transition w-24"
               >
@@ -36,7 +36,7 @@
               ></div>
 
               <div
-                class="absolute -top-3 left-56 size-14 z-10 bg-[#ff922d] rounded-full"
+                class="absolute -top-4 left-60 size-14 z-10 bg-[#ff922d] rounded-full"
               ></div>
             </div>
 
@@ -167,7 +167,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col p-12 gap-12 h-full">
+      <section id="residence" class="flex flex-col p-12 gap-12 h-full">
         <section
           class="flex flex-col items-center justify-center py-16 bg-white"
         >
@@ -240,9 +240,9 @@
           </div>
         </div>
 
-        <section class="flex p-12 gap-40">
+        <section id="value" class="flex p-12 gap-40">
           <div
-            class="border-8 border-gray-300 rounded-t-full overflow-hidden w-[540px] h-[680px] flex flex-1 "
+            class="border-8 border-gray-300 rounded-t-full overflow-hidden w-[540px] h-[680px] flex flex-1"
           >
             <img
               src="/value.png"
@@ -393,7 +393,7 @@
 
       </section>
 
-      <section class="flex gap-8 p-12">
+      <section id="contact" class="flex gap-8 p-12">
         <div class="flex flex-1 flex-col gap-2">
           <span class="text-[#ff922d] text-xl font-semibold"
             >Our Contact Us</span
@@ -429,7 +429,7 @@
                   >021 123 145 14</span
                 >
                 <button
-                  class="text-[#2563eb] bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
+                  class="text-[#2563eb] cursor-pointer bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
                 >
                   Call Now
                 </button>
@@ -463,7 +463,7 @@
                   >021 123 145 14</span
                 >
                 <button
-                  class="text-[#2563eb] bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
+                  class="text-[#2563eb] cursor-pointer bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
                 >
                   Video Call Now
                 </button>
@@ -495,7 +495,7 @@
                   >021 123 145 14</span
                 >
                 <button
-                  class="text-[#2563eb] bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
+                  class="text-[#2563eb] bg-[#eeeeff] cursor-pointer hover:bg-[#2563eb] hover:text-white hover:scale-105 transition-all duration-300 py-2 rounded-md font-semibold"
                 >
                   Chat Now
                 </button>
@@ -527,7 +527,7 @@
                   >021 123 145 14</span
                 >
                 <button
-                  class="text-[#2563eb] bg-[#eeeeff] hover:bg-[#2563eb] hover:text-white hover:scale-110 transition-all duration-300 py-2 rounded-md font-semibold"
+                  class="text-[#2563eb] bg-[#eeeeff] cursor-pointer hover:bg-[#2563eb] hover:text-white hover:scale-110 transition-all duration-300 py-2 rounded-md font-semibold"
                 >
                   Message Now
                 </button>
@@ -541,14 +541,45 @@
         </div>
       </section>
 
-      <section class="p-12">
-        <div class="flex flex-col gap-4 justify-center items-center bg-[#1d4ed8] rounded h-72 border-4 border-[#3b82f6]">
-          <span class="font-semibold text-4xl text-[#e5e7eb]">Get started with Homyz</span>
-          <p class="text-[#8c8b8b] text-base">Subscribe and find super attractive price quotes from us. Find your residence soon</p>
-          <button class="border-2 border-white bg-[#3b82f6] hover:scale-110 text-white p-2 rounded transition-all duration-300 cursor-pointer">Get Started</button>
+      <section id="get" class="p-12">
+        <div
+          class="flex flex-col gap-4 justify-center items-center bg-[#1d4ed8] rounded h-72 border-4 border-[#3b82f6]"
+        >
+          <span class="font-semibold text-4xl text-[#e5e7eb]"
+            >Get started with Homyz</span
+          >
+          <p class="text-[#8c8b8b] text-base">
+            Subscribe and find super attractive price quotes from us. Find your
+            residence soon
+          </p>
+          <button
+            class="border-2 border-white bg-[#3b82f6] hover:scale-110 text-white p-2 rounded transition-all duration-300 cursor-pointer"
+          >
+            Get Started
+          </button>
         </div>
       </section>
     </main>
+
+    <footer class="flex flex-row p-12 justify-between">
+      <div class="flex flex-col gap-2">
+        <div><img src="/logo2.png" /></div>
+        <span class="text-[#8c8b8b]"
+          >Our vision is to make all people<br />
+          the best place to live for them.</span
+        >
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[#1f3e72] text-4xl font-bold">Information</span>
+        <span class="text-[#8c8b8b]">145 New York, FL 5467, USA</span>
+        <ul class="flex gap-4 text-[#1f3e72] font-semibold mt-4">
+          <li>Property</li>
+          <li>Services</li>
+          <li>Product</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>
