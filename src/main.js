@@ -17,7 +17,7 @@ const loadHouses = async () => {
     housesEl.innerHTML += `
       <div class="flex flex-col w-[300px] rounded-md gap-4 transition-all hover:scale-110 hover:bg-[#e8e5f8] p-6">
         <div class="w-[250px]">
-          <img class="w-full object-cover rounded-lg" src="${house.image}" alt="home-pic" />
+          <img class="w-full object-cover rounded-lg" src="/${house.image}" alt="home-pic" />
         </div>
         <span class="text-xl text-[#8c8b8b]">
           <span class="text-[#ff922d]">$</span>${house.price}
