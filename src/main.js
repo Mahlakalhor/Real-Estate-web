@@ -3,6 +3,8 @@ import "./style.css";
 
 const cardsEl = document.querySelectorAll(".card");
 const housesEl = document.getElementById("houses");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
 const loadHouses = async () => {
   const res = await fetch(
@@ -44,4 +46,12 @@ cardsEl.forEach((card) => {
       paragraph.classList.add("hidden");
     }
   });
+});
+
+nextBtn.addEventListener("click", () => {
+  housesEl.scrollBy({ left: 300, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+  housesEl.scrollBy({ left: -300, behavior: "smooth" });
 });

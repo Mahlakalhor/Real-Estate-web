@@ -202,12 +202,12 @@
             <span class="text-[#ff922d] text-2xl font-bold">Best Choices</span>
             <div class="flex gap-2">
               <button
-                class="h-[32px] w-[32px] flex items-center justify-center shadow-xl/30 rounded bg-white"
+                id="prevBtn" class="h-[32px] w-[32px] cursor-pointer flex items-center justify-center shadow-xl/30 rounded bg-white"
               >
                 &lt;
               </button>
               <button
-                class="h-[32px] w-[32px] flex items-center justify-center shadow-xl/30 rounded bg-white"
+                id="nextBtn" class="h-[32px] cursor-pointer w-[32px] flex items-center justify-center shadow-xl/30 rounded bg-white"
               >
                 &gt;
               </button>
@@ -217,7 +217,7 @@
             >Popular Residencies</span
           >
         </div>
-        <div id="houses" class="flex gap-8 overflow-x-hidden overflow-y-hidden">
+        <div id="houses" class="flex gap-8 overflow-x-auto overflow-y-hidden">
           <!-- <div
             class="flex flex-col w-[300px] rounded-md gap-4 transition-all hover:scale-110 hover:bg-[#e8e5f8] p-6"
           >
